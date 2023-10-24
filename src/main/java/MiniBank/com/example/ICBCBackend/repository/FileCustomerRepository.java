@@ -2,10 +2,12 @@ package MiniBank.com.example.ICBCBackend.repository;
 
 import MiniBank.com.example.ICBCBackend.model.Customer;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.stereotype.Repository;
+
 import java.io.File;
 import java.nio.file.Paths;
 import java.util.*;
-
+@Repository
 public class FileCustomerRepository  implements CustomerRepository{
     private final String directory = "data/customers";
     private final ObjectMapper objectMapper = new ObjectMapper();

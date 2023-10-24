@@ -3,18 +3,17 @@ package MiniBank.com.example.ICBCBackend.service.Impl;
 import MiniBank.com.example.ICBCBackend.model.Customer;
 import MiniBank.com.example.ICBCBackend.repository.CustomerRepository;
 import MiniBank.com.example.ICBCBackend.service.CustomerService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class CustomerServiceImpl implements CustomerService {
-    private final CustomerRepository customerRepository;
 
     public CustomerServiceImpl(CustomerRepository customerRepository){
-        this.customerRepository =  customerRepository;
     }
 
     @Override
-    public Customer getCustomer(Customer customer) {
+    public Customer getCustomer(String id) {
         return null;
     }
 
